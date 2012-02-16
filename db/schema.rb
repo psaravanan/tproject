@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120122133804) do
+ActiveRecord::Schema.define(:version => 20120216082504) do
+
+  create_table "facebooks", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "email"
+    t.string   "password"
+  end
 
   create_table "homes", :force => true do |t|
     t.string   "name"

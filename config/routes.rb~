@@ -1,5 +1,5 @@
 Tproject::Application.routes.draw do
-  resources :facebooks, :only => [:index, :create]
+  resources :facebooks
 
   resources :homes
 
